@@ -3,58 +3,48 @@
 <head>
 <title>Dice game</title>
 <link rel="stylesheet" type="text/css" href="diceGame.css">
-
 </head>
-<body>
-
-    
-
- <div class="main-container">
-      <div class="container-1">
-        
-    <div class="player-panel" id="panel-0">
-        
-        <div class="player-name" id="player-0">Player 1</div>
-        <div class="player-score" id="score-0">0</div>
-        <div class="round-score">
-        <p>Current</p>
-        <div class="round-score-0">0</div>
-        </div>
-
-    </div>
-   
-     <div class="player-panel" id="panel-1">
-        
-         <div class="player-name" id="player-1">Player 2</div>
-        <div class="player-score" id="score-1">0</div>
-        <div class="round-score">
-        <p>Current</p>
-        <div class="round-score-1">0</div>
-        </div>
-        
-        </div>
-     </div>
-     
-          <div class="buttons">
-     <button class="newGame-btn">New game</button>   
-    <button class="roll-btn">ROLL DICE</button>   
-    <button class="hold-btn">HOLD</button>    
-        <input type="text" placeholder="ENTER SCORE" class="scoreLimit" value="20">
+<body>  
+    <div class="main-container">
+            <div class="container-1">    
+                <div class="player-panel" id="panel-0">
+                    <div class="player-name" id="player-0">Player 1</div>
+                    <div class="player-score" id="score-0">0</div>
+                    <div class="round-score">
+                        <p>Current</p>
+                        <div class="round-score-0">0</div>
+                    </div>
+                </div>
+                <div class="player-panel" id="panel-1">
+                    <div class="player-name" id="player-1">Player 2</div>
+                    <div class="player-score" id="score-1">0</div>
+                    <div class="round-score">
+                        <p>Current</p>
+                        <div class="round-score-1">0</div>
+                    </div>
+                </div>
             </div>
-     
-        <img class="dice" src="dice-1.png">
-        
-     
-     
-     
-     
-    </div>
- 
-    
-
-    
+            <div class="buttons">
+                <button class="newGame-btn">New game</button>   
+                <button class="roll-btn">ROLL DICE</button>   
+                <button class="hold-btn">HOLD</button>    
+                <input type="text" placeholder="ENTER SCORE" class="scoreLimit" value="20">
+            </div>
+            
+            <img class="dice" src="dice-1.png">
+            <div class="rules">
+                <h3>Rules:</h3>
+                <ul>
+                    <li>The winner is the person who reaches the score limit first (default score limit is is 20 but you can change it). </li>
+                    <li>Each turn a player rolls a dice and the score of it is add to the current score.</li>
+                    <li>The player is able to roll multiple times and each time the amount rolled is add to his current score.</li>
+                    <li>If the player rolls a 1, the player loses all his current player and the turn goes to the other player.</li>
+                    <li>In order to not lose you points, use hold  button to store your score but by doing that you turns ends.</li>
+                </ul>
+            </div>
   
-    
+    </div>
+     
     <script src="dice-game.js" ></script>
-    </body>
+</body>
 </html>

@@ -112,7 +112,14 @@ input{
     color:red;
 }
 
-
+.rules{
+    color:white;
+    position:relative;
+    bottom:420px;
+}
+.rules ul li{
+  margin:7px;
+}
 
 
 
